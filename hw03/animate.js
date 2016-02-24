@@ -4,10 +4,6 @@ SoftDev2 pd3
 HW3 -- Are We Ever Going to Start the Movie?
 2016-02-23
 */
-<Firstname> <Lastname>
-SoftDev2 pd<p>
-HW<n> -- <Title/Topic/Summary>
-<yyyy>-<mm>-<dd> 
 
 var c=document.getElementById("playground");
 var ctx=c.getContext("2d");
