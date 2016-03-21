@@ -31,19 +31,20 @@ function start_circle(){
 
 /* I don't know how to get the dvd image into the svg :(
    Spent a lot of time searching and trying stuff before I gave up
+*/
 function start_dvd(){
     console.log("1");
     if (document.getElementsByTagName("dvd")[0] == null){
 	console.log("2");
 	var c = document.createElementNS("http://www.w3.org/2000/svg", "dvd");
 	console.log("3");
-	c.setAttribute("src","logo.png");
+	c.setAttribute("xlink: href","logo.png");
 	console.log("4");
-	c.setAttribute("x",250);
-	c.setAttribute("y",250);
-//	c.setAttribute("height","250");
+	c.setAttribute("height",250);
+	c.setAttribute("width",250);
+	c.setAttribute("x","0");
 	console.log("5");
-	//c.setAttribute("width","250");
+	c.setAttribute("y","0");
 	console.log("6");
 	box.appendChild(c);
 	console.log("7");
