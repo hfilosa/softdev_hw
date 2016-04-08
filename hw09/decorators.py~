@@ -1,0 +1,5 @@
+import time
+
+def timetest(f):
+    start = time.time()
+    
