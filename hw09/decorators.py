@@ -4,7 +4,7 @@ import time
 def timetest(f):
     def inner(*args):
         start = time.time()
-        result=f(args)
+        result=f(*args)
         print "Execution time: ",time.time()-start
         print result
     return inner
@@ -13,7 +13,8 @@ def timetest(f):
 #How can I get multiple arguments to print?
 def logger(f):
     def inner(*args):
-        print f.func_name,args
+        print f.func_name+": "+str(args)
+        return f(*args)
     return inner
 
 #For testing
@@ -25,4 +26,4 @@ def union(a,b):
 a=[1,2,3,5,7]
 b=[1,2,3,4,6]
 
-print union(a,b)
+union(a,b)
